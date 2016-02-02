@@ -1,0 +1,43 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    //declare variables
+    double dblamount;
+    double dbltax;
+    double dbltaxtotal;
+    int intage;
+    
+    // input
+    cout << "Enter the amount :" << endl;
+    cin >> dblamount;
+    
+    cout << "Enter your age :" << endl;
+    cin >> intage;
+    //calc
+    
+  if (intage >=65) {
+  dbltax = 0;
+}
+
+  else {
+  dbltax = dblamount * 0.08;
+  dbltaxtotal = dblamount + dbltax;
+}
+    
+    //output
+    
+    cout << "The tax is: " << dbltaxtotal << endl;
+    
+    
+    
+    
+    
+    
+    
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
